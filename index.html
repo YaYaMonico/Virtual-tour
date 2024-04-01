@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Para garantir que a imagem de fundo cubra toda a área da página */
+            background-image: url('../img/future_city.svg'); /* URL da imagem de fundo */
+            background-size: cover; /* Para ajustar o tamanho da imagem para cobrir toda a área do elemento pai */
+            background-position: center; /* Para centralizar a imagem */
+            background-attachment: fixed; /* Para que a imagem de fundo permaneça fixa enquanto você rola a página */
+            height: 100vh; /* Define a altura da página para cobrir toda a altura da janela do navegador */
+            display: flex; /* Define o layout flexível para o conteúdo */
+            background-repeat: no-repeat; /* Não repetir a imagem de fundo */
+            background-size: cover; /* Ajustar o tamanho da imagem de fundo */
+        }
+
+        /* Estilos para as imagens */
+        img {
+            border-radius: 50%; /* Adiciona um efeito de borda arredondada */
+            text-align: center; /* Centraliza o texto */
+            align-self: center; /* Alinha as imagens verticalmente */
+        }
+
+        /* Estilos para o conteúdo central */
+        .center {
+            margin-top: 10px; /* Margem superior */
+            margin-left: 300px; /* Margem esquerda */
+            padding: 10px; /* Preenchimento */
+            border-radius: 25px; /* Adiciona um efeito de borda arredondada */
+        }
+
+        /* Estilos para o título */
+        h1 {
+            font-family: Arial, Helvetica, sans-serif; /* Define a família da fonte */
+        }
+
+        /* Estilos para o texto */
+        p {
+            margin-top: 10px; /* Margem superior */
+            margin-left: 280px; /* Margem esquerda */
+            color: white; /* Cor do texto */
+            text-shadow: 2px 2px 4px #000000; /* Adiciona uma sombra ao texto */
+        }
+
+        /* Estilos para o áudio */
+        audio {
+            align-self: center; /* Alinha o áudio verticalmente */
+            margin-left: 290px; /* Margem esquerda */
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteúdo da página -->
+    <div class="center">
+        <!-- Título principal -->
+        <h1>Junte-se a nós...<br>rumo a um <p>Futuro Sustentável</p></h1>
+        
+        <!-- Links para vídeos 360 e imagens -->
+        <a href="../mídia/360_space.mp4"><img src="../img/space.jpg" alt="spaço" width="300" height="300"></a>
+        <a href="../mídia/ocean_360.mp4"><img src="../img/mares.png" alt="mares" width="300" height="300"></a>
+        <a href="../mídia/amazonia_360.mp4"><img src="../img/floresta.jpg" alt="florestas" width="300" height="300"></a>
+        
+        <!-- Controle de áudio -->
+        <audio controls> 
+            <source src="../mídia/talk.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
