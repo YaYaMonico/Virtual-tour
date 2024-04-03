@@ -56,7 +56,6 @@
             margin-left: 290px; /* Margem esquerda */
         }
     </style>
-<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
     <!-- Conteúdo da página -->
@@ -65,40 +64,14 @@
         <h1>Junte-se a nós rumo a um...<p>Futuro Sustentável</p></h1>
         
         <!-- Links para vídeos 360 e imagens -->
-        <a href="intent:#Intent;package=com.google.android.apps.youtube.vr;S.com.google.android.apps.youtube.vr.content_id=gT946e-hZoY;end"><img src="../Virtual-tour/img/space.jpg" alt="spaço" width="300" height="300"></a>
-        <a href="intent:#Intent;package=com.google.android.apps.youtube.vr;S.com.google.android.apps.youtube.vr.content_id=533QhqMQWQ4;end"><img src="../Virtual-tour/img/mares.png" alt="mares" width="300" height="300"></a>
-        <a href="intent:#Intent;package=com.google.android.apps.youtube.vr;S.com.google.android.apps.youtube.vr.content_id=GC6ejxKwbFw;end"><img src="../Virtual-tour/img/floresta.jpg" alt="florestas" width="300" height="300"></a>
+        <a href="https://www.youtube.com/watch?v=gT946e-hZoY" ><img src="../Virtual-tour/img/space.jpg" alt="spaço" width="300" height="300"></a>
+        <a href="https://www.youtube.com/watch?v=533QhqMQWQ4" ><img src="../Virtual-tour/img/mares.png" alt="mares" width="300" height="300"></a>
+        <a href="https://www.youtube.com/watch?v=GC6ejxKwbFw" ><img src="../Virtual-tour/img/floresta.jpg" alt="florestas" width="300" height="300"></a>
         
         <!-- Controle de áudio -->
         <audio controls> 
             <source src="talk.mp3" type="audio/mpeg">
         </audio>
     </div>
-    <script>
-        // Função para carregar o vídeo do YouTube
-        function loadVideo(videoId) {
-          var video = document.getElementById('youtube');
-          video.src = 'https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1';
-        }
-    
-        // Função para reproduzir o vídeo
-        function playVideo() {
-          var videoEntity = document.getElementById('youtube-video');
-          var playButton = document.getElementById('play-button');
-          var playText = document.querySelector('a-text');
-          
-          // Mostrar o vídeo
-          videoEntity.setAttribute('visible', true);
-    
-          // Esconder o botão de reprodução e texto
-          playButton.setAttribute('visible', false);
-          playText.setAttribute('visible', false);
-        }
-    
-        // Carregar o vídeo quando a página é carregada
-        window.onload = function() {
-          loadVideo('VIDEO_ID_HERE');
-        };
-      </script>
 </body>
 </html>
